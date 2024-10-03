@@ -4,7 +4,7 @@ Enable quick unlocking of android phone by piping ```input...``` commands to ```
 This is useful, if you pair/connect your phone with _adb_ wirelessly without having it in reach.
 Once unlocked, you can run scrcpy to poke through the phone while it's elsewhere in your house.
 
-If set up in advance, could be useful un case of a broken screen.
+If set up in advance, could be useful in case of a broken screen.
 
 ### Usage
 - make sure your phone is connected: ```adb devices```
