@@ -48,7 +48,7 @@ ROW_2=1483                  # Y coordinate of row 2 (in pixels)
 ROW_3=1709                  # Y coordinate of row 3 (in pixels)
 
 SWIPE_UP_X=450
-SWIPE_UP_Y_FROM=1000
+SWIPE_UP_Y_FROM=2000
 SWIPE_UP_Y_TO=200
 
 # =======================================================================================================================
@@ -80,13 +80,13 @@ Y[9]=$(( ${ROW_3} ))
 wakeScreen() {
     echo "# wake up"
     echo input keyevent 26
-    sleep 0.5   # a little time to wake up
+    echo "sleep 0.5"   # a little time to wake up
 }
 
 swipeUp() {
     echo "# swipe up to get pattern screen"
     echo input swipe ${SWIPE_UP_X} ${SWIPE_UP_Y_FROM} ${SWIPE_UP_X} ${SWIPE_UP_Y_TO}
-    sleep 2    # sometimes settling on the pattern takes a while
+    echo "sleep 2"    # sometimes settling on the pattern takes a while
 }
 
 startTouch() {
